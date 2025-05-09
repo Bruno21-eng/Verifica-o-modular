@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Função para calcular mdc (usada para primalidade e coprimalidade)
+// Função para calcular mdc 
 int mdc(int a, int b) {
     while (b != 0) {
         int t = b;
@@ -10,7 +10,7 @@ int mdc(int a, int b) {
     return a;
 }
 
-// Teste de primalidade com base no mdc (usado na divisão modular)
+// Teste de primalidade com base no mdc 
 int sao_primos(int a, int b) {
     return mdc(a, b) == 1;
 }
@@ -32,7 +32,7 @@ int inverso_modular(int g, int n) {
     return t;
 }
 
-// Totiente de Euler via fatores primos simples
+// Totiente de Euler 
 int phi(int n) {
     int result = n;
     for (int p = 2; p * p <= n; ++p) {
